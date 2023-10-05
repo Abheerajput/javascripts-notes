@@ -7,7 +7,10 @@ console.log("abhishek")
 let name = "abhishek" 
 //string =>  first="" ,second=''
 
-
+//null is also a datatype
+//object datatype
+//bigint datatype
+//symbol datatype
 
 let length =25 
 //number => 2 tp power 53  

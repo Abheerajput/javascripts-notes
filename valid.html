@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  #Uname{
+    border: 1px solid black;
+
+  }
+</style>
+<body>
+   <form  onsubmit= " return validationForm();" action="message.html">
+    <input type="text" id="Uname" placeholder="Username"><br><br>
+
+    <input type= "password" id="Password1" placeholder="Password"><br><br>
+
+    <input type="password" id="Password2" placeholder="confirm password"><br><br>
+    <button onclick="validationFarm()" type="submit">Register</button>
+  
+    
+   </form>
+   <script type="text/javascript">
+   function validationForm(){
+      const name=document.getElementById("Uname");
+      const Password1=document.getElementById("Password1")
+     const Password2=document.getElementById("Password2")
+  
+
+
+if(name.value==='' || name.value === null  || name.value.length<3){
+  Uname.style.border=" 2px solid red";
+  alert("name can't be blank");
+  return false;
+}
+else {
+  Uname.style.border="2px solid green";
+  
+}
+
+
+ if(Password1.value == "" || Password1.value==null || Password1.value.length<8){
+  Password1.style.border="2px solid red";  
+  alert("password can't be empty \n password must be 8 letters ");
+   return false;
+ }
+ else{
+  Password1.style.border="2px solid green";
+ }
+
+
+  if(Password2.value== '' || Password2.value==null || Password2.value.length<8){
+    Password2.style.border="2px solid red";
+    alert("enter the confirm password");
+     return false;
+   }
+   else{
+    Password2.style.border="2px solid green";
+   }
+
+
+
+   if(Password1.value===Password2.value){
+    alert("password match succesful");
+    true;
+   }else{
+    Password2.style.border="2px solid red";
+    alert("password not match");
+    return false;
+   }
+
+  }
+  //  if(name.value ===''|| name.value==null)
+ 
+  // {
+  //   alert("please enter the name coulmn");
+  //   Uname.style.border="3px solid red";
+  //   return false;
+  // }
+  //  else if(Password1.value == "" || Password1.value==null || Password1.value.length<8){
+  //   alert("password can't be empty \n password must be 8 letters ");
+  //   return false;
+  // }
+  // else if(Password2.value== '' || Password2.value==null || Password2.value.length<8){
+  //   alert("enter the confirm password");
+  //   return false;
+  // }
+  // else if(Password1.value !==Password2 .value){
+  //   alert("password  can't match");
+  //   return false;
+  // }
+  // else(Password1.value===Password2.value)
+  // { 
+  //   return true;
+  // }
+  
+
+
+
+
+
+
+
+
+
+
+
+    // var name=document.form.Uname.value;
+  //   Password1 = form.password1.value; 
+  //   Password2 = form.password2.value; 
+
+  //    if(password1 =='')  {
+  //     alert("please enter the password");
+  //    }
+  //     if (password2 == '') 
+  //    alert ("Please enter confirm password"); 
+    
+  //   else if (password1 !=password2) {   
+  //    alert ("\nPassword did not match: Please try again...") 
+  //     return  false; 
+  //      } else{
+  //       alert("password match ");
+  //       return true;
+  //      } 
+
+  //  }
+   </script>
+
+
+   </script>
+</body>
+</html>
+
+ 
